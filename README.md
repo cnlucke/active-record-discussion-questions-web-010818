@@ -46,14 +46,26 @@ end
 ```
 
 1. `Tweet.all`
+```
   SELECT * from tweets;
+```
 2. `Tweet.find(5)`
+```
   SELECT * from tweets WHERE user_id = 5;
+```
 3. `Tweet.find_by(user_id: 7)`
+```
   SELECT * from tweets WHERE user_id = 7;
+```
 4. `Tweet.where(user_id: 7)`
+```
   SELECT * from tweets WHERE user_id = 7;
+```
 5. `Tweet.create(user_id: 5, message: 'making some coffee')`
+```
   INSERT INTO tweets VALUES (5, 'making some coffee');
+```
 6. `Tweet.destroy(7)`
+```
   DELETE FROM tweets WHERE user_id = 7;
+```
